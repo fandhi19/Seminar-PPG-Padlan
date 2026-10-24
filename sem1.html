@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refleksi Semester 1 | E-Portofolio Padlan - PPG Calon Guru UNY</title>
+    <meta name="description" content="Lembar Kerja 2 (LK 2) Refleksi Pengalaman Belajar Setiap Mata Kuliah Semester 1 - Padlan, PPG Calon Guru UNY 2026." />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Logo Uny outlitne.png" type="image/x-icon" />
+
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- TEKSTUR KERTAS / GRAIN OVERLAY -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- RUNNING SIDE LABEL -->
+    <div class="side-runner" aria-hidden="true">PADLAN • LEMBAR KERJA 2 • REFLEKSI SEMESTER 1 • PPG UNY 2026</div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">
+          <img src="images/logo_uny.png" alt="Logo UNY" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">E-PORTOFOLIO</span>
+            <span class="brand-sub">PPG CALON GURU 2026</span>
+          </div>
+        </a>
+
+        <nav class="nav-center-wrapper" id="navMenu">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Beranda</a></li>
+            <li><a href="visi.html" class="nav-link">Visi Pribadi</a></li>
+            <li><a href="sem1.html" class="nav-link active">Refleksi Sem 1</a></li>
+            <li><a href="sem2.html" class="nav-link">Refleksi Sem 2</a></li>
+            <li><a href="refleksi-ppg.html" class="nav-link">Refleksi PPG</a></li>
+            <li><a href="karya.html" class="nav-link">Karya Inovasi</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://e-portofolio-ppg-padlan.vercel.app/" target="_blank" class="btn-nav">
+          <span>Kunjungi E-Portofolio PPL</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main style="padding-top: 40px; padding-bottom: 80px">
+      <!-- PAGE HEADER BANNER -->
+      <section class="container" style="margin-bottom: 36px">
+        <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 40px 36px; box-shadow: var(--shadow-hard); position: relative; overflow: hidden">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px">
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background-color: var(--mustard);
+                border: var(--border-medium);
+                padding: 6px 16px;
+                border-radius: 30px;
+                font-family: var(--font-display);
+                font-size: 0.82rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              <i class="fa-solid fa-bookmark"></i>
+              <span>Lembar Kerja 2 (LK 2) • Refleksi Pengalaman Belajar</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+              <a href="refleksi2.html" class="btn-nav" style="font-size: 0.8rem; padding: 8px 16px">
+                <span>Lanjut ke Sem 2</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 3.8vw, 3.2rem); font-weight: 900; color: var(--charcoal); line-height: 1.15; margin-bottom: 16px; text-transform: uppercase">
+            Refleksi Pembelajaran <span style="background-color: var(--mustard-light); padding: 0 8px; border-radius: 6px">Semester 01</span>
+          </h1>
+          <p style="font-size: 1.05rem; color: var(--charcoal-muted); max-width: 860px; line-height: 1.6">
+            Eksplorasi mendalam hasil refleksi 6 mata kuliah Semester 1 berbasis kerangka <strong>4C (Connection, Challenge, Concept, Change)</strong>, telaah artefak pembelajaran, serta dokumen resmi Lembar Kerja 2 (LK 2) yang tersimpan di repositori portofolio.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION: PDF VIEWER & ANALISIS MATA KULIAH -->
+      <section class="container" id="viewer-section" style="margin-bottom: 60px">
+        <!-- SECTION DIVIDER -->
+        <div class="section-divider">
+          <h2 class="section-divider-title">Pilih Mata Kuliah & Dokumen Refleksi</h2>
+          <div class="section-divider-line"></div>
+          <div class="section-divider-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- TABS SELECTOR 6 MATA KULIAH -->
+        <div class="course-tabs-nav" id="courseTabs">
+          <button class="course-tab-btn active" data-course="filosofi">
+            <span class="tab-num">01</span>
+            <span>Filosofi Pendidikan & Nilai</span>
+          </button>
+          <button class="course-tab-btn" data-course="pma">
+            <span class="tab-num">02</span>
+            <span>Pembelajaran Mendalam & Asesmen</span>
+          </button>
+          <button class="course-tab-btn" data-course="ppdp">
+            <span class="tab-num">03</span>
+            <span>Pemahaman Peserta Didik</span>
+          </button>
+          <button class="course-tab-btn" data-course="pki">
+            <span class="tab-num">04</span>
+            <span>Pembelajaran Kreatif Inovatif</span>
+          </button>
+          <button class="course-tab-btn" data-course="mindset">
+            <span class="tab-num">05</span>
+            <span>Pola Berpikir Bertumbuh</span>
+          </button>
+          <button class="course-tab-btn" data-course="ppl1">
+            <span class="tab-num">06</span>
+            <span>PPL 1 Terbimbing</span>
+          </button>
+        </div>
+
+        <!-- FITUR PDF VIEWER INTERAKTIF -->
+        <div class="pdf-viewer-card" id="pdfViewerCard">
+          <div class="pdf-viewer-header">
+            <div class="pdf-viewer-title-group">
+              <div class="pdf-window-dots">
+                <span class="pdf-window-dot dot-red"></span>
+                <span class="pdf-window-dot dot-yellow"></span>
+                <span class="pdf-window-dot dot-green"></span>
+              </div>
+              <span class="pdf-filename" id="pdfViewerFilename">
+                <i class="fa-solid fa-file-pdf"></i> Dokumen/Sem1/Refleksi Filosofi.pdf
+              </span>
+            </div>
+
+            <div class="pdf-toolbar-actions">
+              <button class="pdf-action-btn" id="btnFullscreenPdf" type="button" title="Mode Layar Penuh">
+                <i class="fa-solid fa-expand" id="fullscreenIcon"></i>
+                <span id="fullscreenText">Layar Penuh</span>
+              </button>
+              <a href="Dokumen/Sem1/Refleksi%20Filosofi.pdf" download="Refleksi Filosofi.pdf" id="btnDownloadPdf" class="pdf-action-btn" title="Unduh File PDF">
+                <i class="fa-solid fa-download"></i>
+                <span>Unduh PDF</span>
+              </a>
+              <a href="Dokumen/Sem1/Refleksi%20Filosofi.pdf" target="_blank" id="btnOpenNewTabPdf" class="pdf-action-btn" title="Buka di Tab Baru">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Tab Baru</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="pdf-viewer-body">
+            <iframe
+              id="pdfIframe"
+              src="Dokumen/Sem1/Refleksi%20Filosofi.pdf#toolbar=1&navpanes=1&scrollbar=1"
+              title="Pratinjau Dokumen Refleksi Semester 1"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- DETAIL ANALISIS & REFLEKSI 4C DI BAWAH PDF VIEWER -->
+        <div style="margin-top: 36px">
+          <!-- CARD HEADER INFO MATA KULIAH -->
+          <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 26px 28px; box-shadow: var(--shadow-hard); margin-bottom: 24px; position: relative">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 8px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span class="course-card-tag" id="courseTagBadge" style="background-color: var(--mustard); color: var(--charcoal); font-weight: 900; font-size: 0.8rem">
+                  01 • FILOSOFI & NILAI
+                </span>
+                <span style="font-size: 0.78rem; font-weight: 800; background-color: var(--charcoal); color: var(--white); padding: 3px 8px; border-radius: 4px">
+                  LEMBAR KERJA 2 (LK 2)
+                </span>
+              </div>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--charcoal-muted)">
+                <i class="fa-solid fa-circle-check" style="color: #22c55e"></i> Terverifikasi PPG UNY
+              </span>
+            </div>
+
+            <h2 id="courseDetailTitle" style="font-family: var(--font-display); font-size: clamp(1.4rem, 2.2vw, 1.85rem); font-weight: 900; color: var(--charcoal); line-height: 1.25">
+              01. Filosofi Pendidikan dan Pendidikan Nilai
+            </h2>
+            <p id="courseArtefakTitle" style="font-size: 0.95rem; color: var(--charcoal-muted); margin-top: 6px">
+              <strong>Artefak Pembelajaran:</strong> Aktivitas 4.4 Koneksi Antar Materi (Analisis Diagram X Kerangka 4C Kode Etik dalam Kerangka Pendidikan Nilai)
+            </p>
+          </div>
+
+          <!-- GRID 4 KARTU 4C (CONNECTION, CHALLENGE, CONCEPT, CHANGE) -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 28px">
+            <!-- 1. Connection -->
+            <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 22px; box-shadow: var(--shadow-hard-sm)">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background-color: var(--mustard); border: var(--border-medium); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--charcoal); flex-shrink: 0">
+                  <i class="fa-solid fa-link"></i>
+                </div>
+                <div>
+                  <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--charcoal-muted)">Dimensi 01</span>
+                  <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 900; color: var(--charcoal); line-height: 1.15">
+                    Connection (Keterkaitan)
+                  </h4>
+                </div>
+              </div>
+              <p id="courseConnectionText" style="font-size: 0.9rem; line-height: 1.6; color: var(--charcoal)">
+                Mata kuliah ini membekali saya dengan landasan filosofis pendidikan Indonesia yang berakar pada nilai-nilai Pancasila (Ki Hadjar Dewantara). Materi Landasan Filosofi, Pola Pikir Bertumbuh, Pendidikan Nilai, dan Kode Etik Guru menuntut saya tidak hanya menguasai kompetensi akademik, melainkan menjadi teladan hidup yang mengamalkan nilai Pancasila, moral profesi, dan pembelajar sepanjang hayat yang berorientasi pada murid.
+              </p>
+            </div>
+
+            <!-- 2. Challenge -->
+            <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 22px; box-shadow: var(--shadow-hard-sm)">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background-color: #fee2e2; border: var(--border-medium); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #dc2626; flex-shrink: 0">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                  <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--charcoal-muted)">Dimensi 02</span>
+                  <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 900; color: var(--charcoal); line-height: 1.15">
+                    Challenge (Tantangan)
+                  </h4>
+                </div>
+              </div>
+              <p id="courseChallengeText" style="font-size: 0.9rem; line-height: 1.6; color: var(--charcoal)">
+                Selama ini saya cenderung memandang kode etik dan nilai-nilai pendidikan hanya sebagai aturan formal atau materi teori di kelas. Mata kuliah ini menantang saya bahwa pendidikan nilai justru harus dihidupkan melalui keteladanan sikap dan perilaku guru sehari-hari secara konsisten dalam budaya sekolah, bukan sekadar instruksional kognitif.
+              </p>
+            </div>
+
+            <!-- 3. Concept -->
+            <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 22px; box-shadow: var(--shadow-hard-sm)">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background-color: #e0f2fe; border: var(--border-medium); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #0284c7; flex-shrink: 0">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div>
+                  <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--charcoal-muted)">Dimensi 03</span>
+                  <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 900; color: var(--charcoal); line-height: 1.15">
+                    Concept (Konsep Kunci)
+                  </h4>
+                </div>
+              </div>
+              <p id="courseConceptText" style="font-size: 0.9rem; line-height: 1.6; color: var(--charcoal)">
+                Pancasila sebagai fondasi filosofis karakter murid; Growth Mindset sebagai kerangka pengembangan diri guru berkelanjutan; Pendidikan nilai terintegrasi dalam budaya sekolah nyata; Kode etik guru sebagai pedoman moral profesional dan basis keteladanan luhur bangsa.
+              </p>
+            </div>
+
+            <!-- 4. Change -->
+            <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 22px; box-shadow: var(--shadow-hard-sm)">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background-color: #dcfce7; border: var(--border-medium); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #16a34a; flex-shrink: 0">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div>
+                  <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--charcoal-muted)">Dimensi 04</span>
+                  <h4 style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 900; color: var(--charcoal); line-height: 1.15">
+                    Change (Rencana Aksi)
+                  </h4>
+                </div>
+              </div>
+              <p id="courseChangeText" style="font-size: 0.9rem; line-height: 1.6; color: var(--charcoal)">
+                Berkomitmen menjadi teladan nyata nilai kejujuran, tanggung jawab, disiplin, keadilan, dan integritas di sekolah. Mengembangkan pola pikir bertumbuh melalui refleksi berkala agar konsisten memegang kode etik di tengah tekanan pekerjaan dan pengaruh lingkungan.
+              </p>
+            </div>
+          </div>
+
+          <!-- KARTU ANALISIS ARTEFAK & RUMUSAN HASIL REFLEKSI -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+            <!-- Box Analisis Artefak -->
+            <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 28px; box-shadow: var(--shadow-hard)">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px">
+                <i class="fa-solid fa-folder-tree" style="font-size: 1.3rem; color: var(--mustard-deep)"></i>
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 900; color: var(--charcoal)">
+                  Analisis Artefak Pembelajaran
+                </h3>
+              </div>
+              <p id="courseArtefakReason" style="font-size: 0.93rem; line-height: 1.65; color: var(--charcoal); background-color: var(--paper-bg); padding: 18px; border-radius: 8px; border: var(--border-thin)">
+                Artefak ini dipilih karena secara langsung merekam proses berpikir mengaitkan kode etik guru dengan materi-materi lain (Landasan Filosofi Pendidikan, Pola Pikir Bertumbuh, dan Pendidikan Nilai), serta menunjukkan perubahan cara pandang dan tantangan nyata yang saya identifikasi sebagai calon guru.
+              </p>
+            </div>
+
+            <!-- Box Rumusan Hasil Refleksi -->
+            <div style="background-color: var(--white); border: var(--border-thick); border-radius: 12px; padding: 28px; box-shadow: var(--shadow-hard)">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px">
+                <i class="fa-solid fa-award" style="font-size: 1.3rem; color: var(--mustard-deep)"></i>
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 900; color: var(--charcoal)">
+                  Rumusan Hasil Refleksi
+                </h3>
+              </div>
+              <p id="courseRumusanText" style="font-size: 0.93rem; line-height: 1.65; color: var(--charcoal); background-color: var(--paper-bg); padding: 18px; border-radius: 8px; border: var(--border-thin)">
+                Mata kuliah Filosofi Pendidikan dan Pendidikan Nilai memperkuat pemahaman bahwa peran guru tidak cukup hanya menguasai kompetensi akademik, melainkan harus menjadi teladan hidup dalam mengamalkan nilai-nilai Pancasila sebagaimana digagas oleh Ki Hadjar Dewantara, di mana nilai dihidupkan melalui keteladanan sehari-hari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION DIVIDER -->
+      <section class="container" style="margin-bottom: 30px">
+        <div class="section-divider">
+          <h2 class="section-divider-title">Daftar Mata Kuliah Semester 01</h2>
+          <div class="section-divider-line"></div>
+          <div class="section-divider-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- 6 KARTU MATA KULIAH RINGKAS -->
+        <div class="materi-cards-grid">
+          <!-- Card 1 -->
+          <div class="course-card">
+            <div>
+              <span class="course-card-tag">Filosofi & Nilai</span>
+              <h4>01. Filosofi Pendidikan dan Pendidikan Nilai</h4>
+              <p>Mendalami hakikat pendidikan, sistem among Ki Hajar Dewantara, etika moral, dan internalisasi nilai Pancasila.</p>
+            </div>
+            <div class="course-card-footer">
+              <span style="font-size: 0.75rem; font-weight: 700">Refleksi Filosofi.pdf</span>
+              <button class="btn-artefak select-course-card-btn" data-course="filosofi">
+                <span>Buka Refleksi</span>
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="course-card">
+            <div>
+              <span class="course-card-tag">Perancangan & Asesmen</span>
+              <h4>02. Pembelajaran Mendalam dan Asesmen Dasar</h4>
+              <p>Perancangan deep learning berkesadaran, bermakna, menggembirakan; model 5E; dan asesmen holistik.</p>
+            </div>
+            <div class="course-card-footer">
+              <span style="font-size: 0.75rem; font-weight: 700">Refleksi PMA DASAR.pdf</span>
+              <button class="btn-artefak select-course-card-btn" data-course="pma">
+                <span>Buka Refleksi</span>
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="course-card">
+            <div>
+              <span class="course-card-tag">Psikologi Belajar</span>
+              <h4>03. Pemahaman Tentang Peserta Didik</h4>
+              <p>Profiling komprehensif, teori perkembangan, ZPD Vygotsky, dan strategi pembelajaran berdiferensiasi.</p>
+            </div>
+            <div class="course-card-footer">
+              <span style="font-size: 0.75rem; font-weight: 700">Refleksi PPDP.pdf</span>
+              <button class="btn-artefak select-course-card-btn" data-course="ppdp">
+                <span>Buka Refleksi</span>
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="course-card">
+            <div>
+              <span class="course-card-tag">Inovasi Pedagogik</span>
+              <h4>04. Pembelajaran Kreatif Inovatif</h4>
+              <p>Identifikasi masalah belajar terstruktur, game-based learning, station learning, dan integrasi teknologi.</p>
+            </div>
+            <div class="course-card-footer">
+              <span style="font-size: 0.75rem; font-weight: 700">Refleksi PKI.pdf</span>
+              <button class="btn-artefak select-course-card-btn" data-course="pki">
+                <span>Buka Refleksi</span>
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="course-card">
+            <div>
+              <span class="course-card-tag">Growth Mindset</span>
+              <h4>05. Pola Berpikir Bertumbuh</h4>
+              <p>Menggeser fokus penilaian ke proses dan usaha, cognitive framing, scaffolding, dan reflection journal.</p>
+            </div>
+            <div class="course-card-footer">
+              <span style="font-size: 0.75rem; font-weight: 700">Pola Pikir Bertumbuh.pdf</span>
+              <button class="btn-artefak select-course-card-btn" data-course="mindset">
+                <span>Buka Refleksi</span>
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="course-card">
+            <div>
+              <span class="course-card-tag">Praktik Terbimbing</span>
+              <h4>06. PPL Terbimbing</h4>
+              <p>Praktik pembelajaran siklus terbimbing di sekolah mitra, penanaman sportivitas, dan refleksi kontinu.</p>
+            </div>
+            <div class="course-card-footer">
+              <span style="font-size: 0.75rem; font-weight: 700">Refleksi PPL 1.pdf</span>
+              <button class="btn-artefak select-course-card-btn" data-course="ppl1">
+                <span>Buka Refleksi</span>
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="images/logo_uny.png" alt="Logo UNY" style="height: 38px" />
+            <span style="font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; color: var(--charcoal)"> PADLAN • SEMINAR PPG UNY </span>
+          </div>
+
+          <div class="footer-socials">
+            <a href="mailto:padlan.educator@gmail.com" class="social-circle-btn" title="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-circle-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/" target="_blank" class="social-circle-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://e-portofolio-ppg-padlan.vercel.app/" target="_blank" class="social-circle-btn" title="E-Portofolio Eksternal"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Padlan • Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK) • PPG Calon Guru Universitas Negeri Yogyakarta. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // 1. Mobile Navbar Toggle
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+      if (navToggle && navMenu) {
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+          const icon = navToggle.querySelector("i");
+          if (icon) {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-xmark");
+          }
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            navMenu.classList.remove("show");
+            const icon = navToggle.querySelector("i");
+            if (icon) {
+              icon.classList.add("fa-bars");
+              icon.classList.remove("fa-xmark");
+            }
+          });
+        });
+      }
+
+      // 2. Data Refleksi 6 Mata Kuliah Semester 1 (Berdasarkan PDF LK 2 Dokumen/Sem1)
+      const courseRefleksiData = {
+        filosofi: {
+          num: "01",
+          tag: "01 • FILOSOFI & NILAI",
+          title: "01. Filosofi Pendidikan dan Pendidikan Nilai",
+          pdfFile: "Dokumen/Sem1/Refleksi%20Filosofi.pdf",
+          downloadName: "Refleksi Filosofi.pdf",
+          filename: "Dokumen/Sem1/Refleksi Filosofi.pdf",
+          artefakTitle: "Aktivitas 4.4 Koneksi Antar Materi (Analisis Diagram X Kerangka 4C Kode Etik dalam Kerangka Pendidikan Nilai)",
+          connection: "Mata kuliah ini membekali saya dengan landasan filosofis pendidikan Indonesia yang berakar pada nilai-nilai Pancasila (Ki Hadjar Dewantara). Materi Landasan Filosofi, Pola Pikir Bertumbuh, Pendidikan Nilai, dan Kode Etik Guru menuntut saya tidak hanya menguasai kompetensi akademik, melainkan menjadi teladan hidup yang mengamalkan nilai Pancasila, moral profesi, dan pembelajar sepanjang hayat yang berorientasi pada murid.",
+          challenge: "Selama ini saya cenderung memandang kode etik dan nilai-nilai pendidikan hanya sebagai aturan formal atau materi teori di kelas. Mata kuliah ini menantang saya bahwa pendidikan nilai justru harus dihidupkan melalui keteladanan sikap dan perilaku guru sehari-hari secara konsisten dalam budaya sekolah, bukan sekadar instruksional kognitif.",
+          concept: "Pancasila sebagai fondasi filosofis karakter murid; Growth Mindset sebagai kerangka pengembangan diri guru berkelanjutan; Pendidikan nilai terintegrasi dalam budaya sekolah nyata; Kode etik guru sebagai pedoman moral profesional dan basis keteladanan luhur bangsa.",
+          change: "Berkomitmen menjadi teladan nyata nilai kejujuran, tanggung jawab, disiplin, keadilan, dan integritas di sekolah. Mengembangkan pola pikir bertumbuh melalui refleksi berkala agar konsisten memegang kode etik di tengah tekanan pekerjaan dan pengaruh lingkungan.",
+          artefakReason: "Artefak dipilih karena merekam proses berpikir mengaitkan kode etik guru dengan landasan filosofi, pola pikir bertumbuh, dan pendidikan nilai, serta merefleksikan tantangan nyata calon guru.",
+          rumusan: "Mata kuliah Filosofi Pendidikan dan Pendidikan Nilai memperkuat pemahaman bahwa guru bukan hanya pengajar akademis, tetapi teladan hidup nilai Pancasila. Pengalaman ini menggeser cara pandang bahwa kode etik adalah pedoman aksi nyata keseharian demi masa depan murid."
+        },
+        pma: {
+          num: "02",
+          tag: "02 • PEMBELAJARAN MENDALAM",
+          title: "02. Pembelajaran Mendalam dan Asesmen Dasar",
+          pdfFile: "Dokumen/Sem1/Refleksi%20PMA%20DASAR.pdf",
+          downloadName: "Refleksi PMA DASAR.pdf",
+          filename: "Dokumen/Sem1/Refleksi PMA DASAR.pdf",
+          artefakTitle: "(1) Analisis Kasus UTS Pembelajaran Passing Bola Voli & (2) Rencana Pembelajaran Mendalam (RPM) Model 5E Kelas VII",
+          connection: "Membekali kemampuan merancang, melaksanakan, dan mengevaluasi pembelajaran PJOK dengan pendekatan deep learning yang berkesadaran, bermakna, dan menggembirakan. Melalui penyusunan RPM passing bola voli, peran guru bergeser dari sekadar demonstran teknik menjadi fasilitator pemahaman konseptual, kesadaran taktis, dan pengambilan keputusan bermain.",
+          challenge: "Sebelumnya saya cenderung mengajar dengan pola teacher-centered (verbal instruksi lalu tirukan, fokus hasil akhir). Mata kuliah ini menantang pergeseran menuju experiential learning, olah pikir-hati-rasa-raga holistik, serta penerapan assessment for, as, dan of learning yang seimbang.",
+          concept: "Prinsip deep learning (mindful, meaningful, joyful); Siklus model 5E (Engage, Explore, Explain, Elaborate, Evaluate); Harmonisasi olah pikir, hati, rasa, dan raga; Asesmen holistik (kognitif, afektif, psikomotorik) yang adil, terbuka, objektif, dan berkelanjutan.",
+          change: "Merancang pembelajaran PJOK dengan siklus experiential learning (game diagnostik, analisis masalah, latihan terarah, kembali ke game); menerapkan rubrik asesmen holistik yang transparan; serta membiasakan murid melakukan refleksi mandiri di akhir sesi.",
+          artefakReason: "Analisis Kasus UTS membuktikan telaah kritis masalah teacher-centered, sedangkan RPM 5E menjadi bukti nyata rencana aksi operasional lengkap dengan asesmen diagnostik, formatif, dan sumatif.",
+          rumusan: "Pembelajaran Mendalam & Asesmen Dasar mentransformasi peran saya menjadi fasilitator nalar taktis dan karakter gerak. Pendekatan 5E dan asesmen menyeluruh memastikan siswa tidak hanya terampil bergerak, tetapi memahami esensi dan makna pembelajaran."
+        },
+        ppdp: {
+          num: "03",
+          tag: "03 • PSIKOLOGI BELAJAR",
+          title: "03. Pemahaman Tentang Peserta Didik dan Pembelajarannya",
+          pdfFile: "Dokumen/Sem1/Refleksi%20PPDP.pdf",
+          downloadName: "Refleksi PPDP.pdf",
+          filename: "Dokumen/Sem1/Refleksi PPDP.pdf",
+          artefakTitle: "UAS PPDB: Proyek 1 Analisis Kasus Kontekstual (Fishbone Diagram) & Instrumen Profiling Murid Kelas VII D (Profil A, B, C)",
+          connection: "Mengajarkan pemahaman murid secara menyeluruh: aspek motorik, kognitif, sosial-emosional, motivasi, dan psikologis. Observasi kelas VII D membuktikan bahwa keberagaman kebutuhan menuntut strategi pembelajaran responsif, bukan penyeragaman klasikal.",
+          challenge: "Sebelumnya terbiasa mengajar dengan satu standar tugas seragam tanpa asesmen awal sistematis. Menyadari bahwa profiling berbasis data (tes diagnostik, observasi perilaku, angket minat) adalah fondasi wajib diferensiasi, bukan sekadar tebakan intuisi.",
+          concept: "Teori perkembangan Piaget, Vygotsky (ZPD & Scaffolding), Erikson, Kohlberg, Gardner; Teori belajar sosial Bandura (modeling, self-efficacy); Humanisme Maslow & Rogers (kebutuhan rasa aman); Pembelajaran berdiferensiasi berbasis data profiling.",
+          change: "Melakukan asesmen awal diagnostik di setiap topik baru; menerapkan strategi berdiferensiasi (station teaching, peer tutoring, penyesuaian kompleksitas gerak); serta menciptakan iklim kelas yang aman psikologis bagi murid yang membutuhkan pendampingan khusus.",
+          artefakReason: "Fishbone diagram merekam ketajaman analisis akar masalah belajar, sedangkan instrumen profiling membuktikan kapasitas merumuskan diferensiasi berbasis data nyata murid kelas VII D.",
+          rumusan: "Pemahaman Peserta Didik menegaskan bahwa setiap anak hadir dengan modalitas unik. Profiling sistematis dan pembelajaran berdiferensiasi adalah wujud keadilan pedagogis agar setiap siswa berkembang optimal sesuai potensinya."
+        },
+        pki: {
+          num: "04",
+          tag: "04 • INOVASI PEDAGOGIK",
+          title: "04. Pembelajaran Kreatif Inovatif",
+          pdfFile: "Dokumen/Sem1/Refleksi%20PKI.pdf",
+          downloadName: "Refleksi PKI.pdf",
+          filename: "Dokumen/Sem1/Refleksi PKI.pdf",
+          artefakTitle: "Tugas KB 4: Menemukan Masalah Pembelajaran untuk Merancang Pembelajaran Kreatif dan Inovatif (5 Masalah PJOK & Solusi)",
+          connection: "Melatih kepekaan mendiagnosis persoalan nyata di lapangan (rendahnya motivasi, disparitas fisik, minim teknologi) dan merumuskan solusi inovatif. Merancang pembelajaran bukan rutinitas mekanis, melainkan problem-solving kreatif.",
+          challenge: "Sebelumnya terjebak pada metode drill konvensional monoton tanpa analisis masalah. Ditantang mengintegrasikan teknologi olahraga (video slow-motion, aplikasi kebugaran) dan memberikan ruang bagi murid untuk turut mengambil keputusan taktik permainan.",
+          concept: "Identifikasi masalah terstruktur (deskripsi, penyebab, solusi); Model inovatif: Game-Based Learning, Project-Based Learning, Station Learning; Integrasi teknologi relevan; Pergeseran menuju student-centered & collaborative play.",
+          change: "Membiasakan analisis akar masalah sebelum membuat modul ajar; mengintegrasikan teknologi sederhana untuk analisis biomekanika gerak; menerapkan peer coaching dalam station learning; serta memfasilitasi murid merancang taktik permainannya sendiri.",
+          artefakReason: "Tugas KB 4 secara komprehensif mendokumentasikan analisis 5 akar masalah utama pembelajaran gerak dan solusinya yang kreatif-inovatif serta kontekstual dengan fasilitas sekolah.",
+          rumusan: "Pembelajaran Kreatif Inovatif membongkar kejenuhan metode drill konvensional. Melalui game-based learning dan pemanfaatan teknologi, pembelajaran gerak menjadi sarana eksplorasi yang menantang, partisipatif, dan relevan dengan generasi muda."
+        },
+        mindset: {
+          num: "05",
+          tag: "05 • GROWTH MINDSET",
+          title: "05. Pola Pikir Bertumbuh (Growth Mindset)",
+          pdfFile: "Dokumen/Sem1/Refleksi%20Pola%20Pikir%20Bertumbuh.pdf",
+          downloadName: "Refleksi Pola Pikir Bertumbuh.pdf",
+          filename: "Dokumen/Sem1/Refleksi Pola Pikir Bertumbuh.pdf",
+          artefakTitle: "LK 4.3 Project-Based: Latihan Berbasis Proyek dalam Mempertajam Pola Pikir Bertumbuh Bola Voli Kelas VII",
+          connection: "Keberhasilan motorik (seperti passing bola voli) tidak semata bakat bawaan, melainkan dipengaruhi cara pandang murid terhadap kesalahan. Peran guru adalah membangun keyakinan bahwa keterampilan berkembang lewat usaha, cognitive framing, dan umpan balik konstruktif.",
+          challenge: "Sebelumnya hanya berfokus pada hasil skor akhir gerakan dan kurang mengapresiasi proses bangkit dari kegagalan. Ditantang mengintegrasikan reflection journal dan celebration of effort agar murid berani mencoba tanpa takut dicap gagal.",
+          concept: "Growth vs Fixed Mindset (Carol Dweck) & Neuroplastisitas otak; 4 Pilar Strategi: cognitive framing, scaffolding, opportunity-based thinking, formative assessment; Budaya kelas yang aman dari penghakiman; Apresiasi usaha di atas sekadar hasil instan.",
+          change: "Konsisten memberi ruang mencoba berulang tanpa stigma; mengalokasikan waktu jurnal refleksi di akhir pembelajaran; merancang tangga scaffolding bertahap agar murid yang kurang percaya diri dapat bertumbuh langkah demi langkah.",
+          artefakReason: "LK 4.3 mendokumentasikan penerapan utuh 4 strategi growth mindset dalam siklus proyek 5E, menunjukkan pergeseran nyata dari orientasi hasil menuju apresiasi usaha dan proses belajar.",
+          rumusan: "Pola Pikir Bertumbuh menyadarkan bahwa kegagalan gerak adalah data untuk belajar, bukan vonis ketidakmampuan. Melalui apresiasi usaha dan lingkungan yang suportif, murid tumbuh menjadi pribadi tangguh dan percaya diri."
+        },
+        ppl1: {
+          num: "06",
+          tag: "06 • PRAKTIK LAPANGAN",
+          title: "06. Praktik Pengalaman Lapangan (PPL) 1 Terbimbing",
+          pdfFile: "Dokumen/Sem1/Refleksi%20PPL%201.pdf",
+          downloadName: "Refleksi PPL 1.pdf",
+          filename: "Dokumen/Sem1/Refleksi PPL 1.pdf",
+          artefakTitle: "Artefak Siklus 3 Permainan Kooperatif: RPM Kelas VII, Media Infografis, dan LK 4 Refleksi Praktik Terbimbing",
+          connection: "Muara aplikasi nyata seluruh teori pedagogik di sekolah mitra. Melalui praktik terbimbing siklus 3 materi permainan kooperatif, saya menguji rancangan pembelajaran mendalam dan menerima umpan balik nyata dari Guru Pamong dan DPL.",
+          challenge: "Sebelumnya hanya fokus pada kelancaran teknis aktivitas. Umpan balik Guru Pamong menyadarkan bahwa penanaman sportivitas, empati, dan sikap menerima kekalahan sama pentingnya dengan penguasaan keterampilan motorik.",
+          concept: "Tahapan progresif PPL (orientasi, observasi, asistensi, terbimbing, mandiri); Kolaborasi kolegial guru pamong & DPL; Siklus refleksi terstruktur pasca-pembelajaran; Pendidikan karakter terintegrasi dalam kompetisi dan permainan kelompok.",
+          change: "Melakukan refleksi terstruktur di setiap siklus (evaluasi apersepsi, inti, penutup, dan respon murid); memperkuat penekanan sportivitas dan saling menghargai; serta terbuka terhadap evaluasi pembimbing demi perbaikan berkelanjutan.",
+          artefakReason: "Artefak Siklus 3 mencakup siklus utuh: perencanaan (RPM), media ajar infografis, pelaksanaan terbimbing, hingga refleksi kritis bersama guru pamong terhadap dinamika kelas nyata.",
+          rumusan: "PPL 1 Terbimbing menjembatani teori kampus dengan realitas kelas. Pembelajaran nyata mengajarkan bahwa menjadi guru adalah proses refleksi tanpa henti, di mana keteladanan karakter berjalan seiring dengan kecakapan pedagogis."
+        }
+      };
+
+      // 3. Elements Mapping
+      const courseTabBtns = document.querySelectorAll(".course-tab-btn");
+      const pdfIframe = document.getElementById("pdfIframe");
+      const pdfViewerFilename = document.getElementById("pdfViewerFilename");
+      const btnDownloadPdf = document.getElementById("btnDownloadPdf");
+      const btnOpenNewTabPdf = document.getElementById("btnOpenNewTabPdf");
+      const courseTagBadge = document.getElementById("courseTagBadge");
+      const courseDetailTitle = document.getElementById("courseDetailTitle");
+      const courseArtefakTitle = document.getElementById("courseArtefakTitle");
+      const courseConnectionText = document.getElementById("courseConnectionText");
+      const courseChallengeText = document.getElementById("courseChallengeText");
+      const courseConceptText = document.getElementById("courseConceptText");
+      const courseChangeText = document.getElementById("courseChangeText");
+      const courseArtefakReason = document.getElementById("courseArtefakReason");
+      const courseRumusanText = document.getElementById("courseRumusanText");
+
+      // 4. Function Switch Course
+      function selectCourse(courseKey, smoothScroll = false) {
+        const data = courseRefleksiData[courseKey];
+        if (!data) return;
+
+        // Update active tab buttons
+        courseTabBtns.forEach((btn) => {
+          if (btn.getAttribute("data-course") === courseKey) {
+            btn.classList.add("active");
+          } else {
+            btn.classList.remove("active");
+          }
+        });
+
+        // Update PDF Viewer
+        pdfIframe.src = `${data.pdfFile}#toolbar=1&navpanes=1&scrollbar=1`;
+        pdfViewerFilename.innerHTML = `<i class="fa-solid fa-file-pdf"></i> ${data.filename}`;
+        btnDownloadPdf.href = data.pdfFile;
+        btnDownloadPdf.download = data.downloadName;
+        btnOpenNewTabPdf.href = data.pdfFile;
+
+        // Update Analisis & Refleksi Texts
+        courseTagBadge.textContent = data.tag;
+        courseDetailTitle.textContent = data.title;
+        courseArtefakTitle.innerHTML = `<strong>Artefak Pembelajaran:</strong> ${data.artefakTitle}`;
+        courseConnectionText.textContent = data.connection;
+        courseChallengeText.textContent = data.challenge;
+        courseConceptText.textContent = data.concept;
+        courseChangeText.textContent = data.change;
+        courseArtefakReason.textContent = data.artefakReason;
+        courseRumusanText.textContent = data.rumusan;
+
+        if (smoothScroll) {
+          const targetEl = document.getElementById("viewer-section");
+          if (targetEl) {
+            targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+      }
+
+      // Event listener for Tabs
+      courseTabBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const key = btn.getAttribute("data-course");
+          selectCourse(key, false);
+        });
+      });
+
+      // Event listener for Bottom Quick Cards
+      document.querySelectorAll(".select-course-card-btn").forEach((cardBtn) => {
+        cardBtn.addEventListener("click", () => {
+          const key = cardBtn.getAttribute("data-course");
+          selectCourse(key, true);
+        });
+      });
+
+      // 5. Fullscreen PDF Viewer Toggle
+      const btnFullscreenPdf = document.getElementById("btnFullscreenPdf");
+      const pdfViewerCard = document.getElementById("pdfViewerCard");
+      const fullscreenIcon = document.getElementById("fullscreenIcon");
+      const fullscreenText = document.getElementById("fullscreenText");
+
+      if (btnFullscreenPdf && pdfViewerCard) {
+        btnFullscreenPdf.addEventListener("click", () => {
+          const isFs = pdfViewerCard.classList.toggle("is-fullscreen");
+          if (isFs) {
+            fullscreenIcon.className = "fa-solid fa-compress";
+            fullscreenText.textContent = "Keluar Layar Penuh";
+            document.body.style.overflow = "hidden";
+          } else {
+            fullscreenIcon.className = "fa-solid fa-expand";
+            fullscreenText.textContent = "Layar Penuh";
+            document.body.style.overflow = "";
+          }
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && pdfViewerCard.classList.contains("is-fullscreen")) {
+            pdfViewerCard.classList.remove("is-fullscreen");
+            fullscreenIcon.className = "fa-solid fa-expand";
+            fullscreenText.textContent = "Layar Penuh";
+            document.body.style.overflow = "";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
